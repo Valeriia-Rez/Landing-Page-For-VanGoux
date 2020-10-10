@@ -1,13 +1,14 @@
-.button {
-  padding: 1rem 6.6rem;
+.btn {
+  padding: 1.5rem 3.5rem;
   border-radius: 0;
   border: none;
   line-height: 20px;
   text-transform: uppercase;
   font-family: $font-tertiary;
-  &-blue {
+  cursor: pointer;
+  &-primary {
     background-color: $secondary;
     color: $white;
-    box-shadow: 0 0 10px rgba(25, 104, 252, 0.2);
+    box-shadow: 0 0 30px 7px rgba(25, 104, 252, 0.2);
   }
 }

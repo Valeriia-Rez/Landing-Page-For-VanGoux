@@ -1,5 +1,12 @@
 .container {
-  padding: 4rem 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  @media (min-width: 1440px) {
+    max-width: 1120px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .heading-1 {
@@ -14,4 +21,44 @@
   font-size: 2rem;
   margin-bottom: 4rem;
   line-height: 4rem;
+}
+
+.message {
+  background-color: $secondary;
+  margin-bottom: 5rem;
+  @media (min-width: 1025px) {
+    display: none;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    padding: 5rem 0;
+    font-family: $font-tertiary;
+  }
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
+  & .testimonialCard {
+    margin-bottom: 5rem;
+    &:nth-child(1) {
+      @media (min-width: 1025px) {
+        margin-bottom: 0;
+        margin-right: 2rem;
+      }
+    }
+    &:nth-child(2) {
+      @media (min-width: 1025px) {
+        margin-bottom: 0;
+        margin-left: 2rem;
+      }
+    }
+  }
 }

@@ -46,18 +46,23 @@ li {
   list-style: none; }
 
 .header {
-  padding: 4rem 8rem;
+  margin: 4rem 0rem 8rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between; }
+  @media (min-width: 1025px) {
+    .header {
+      padding: 0;
+      margin-bottom: 15rem; } }
   .header__content {
     display: none; }
     @media (min-width: 1025px) {
       .header__content {
         display: flex;
-        width: 60%;
+        width: 65%;
         justify-content: space-between; } }
   .header__nav {
-    width: 60%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -66,17 +71,18 @@ li {
     color: #000000;
     font-family: "Muli Semibold", sans-serif; }
 
-.button {
-  padding: 1rem 6.6rem;
+.btn {
+  padding: 1.5rem 3.5rem;
   border-radius: 0;
   border: none;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "Muli Bold", sans-serif; }
-  .button-blue {
+  font-family: "Muli Bold", sans-serif;
+  cursor: pointer; }
+  .btn-primary {
     background-color: #1968fc;
     color: #ffffff;
-    box-shadow: 0 0 10px rgba(25, 104, 252, 0.2); }
+    box-shadow: 0 0 30px 7px rgba(25, 104, 252, 0.2); }
 
 .logo {
   width: 50px;
@@ -91,9 +97,18 @@ li {
     line-height: 30px;
     font-size: 1.5rem;
     font-family: "Muli Semibold", sans-serif; }
+    @media (min-width: 1025px) {
+      .logo a {
+        font-size: 2rem; } }
 
 .container {
-  padding: 4rem 5rem; }
+  margin-left: 5rem;
+  margin-right: 5rem; }
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1120px;
+      margin-right: auto;
+      margin-left: auto; } }
 
 .heading-1 {
   font-size: 4rem;
@@ -107,70 +122,96 @@ li {
   margin-bottom: 4rem;
   line-height: 4rem; }
 
-.banner__info {
-  display: flex;
-  flex-direction: column; }
+.message {
+  background-color: #1968fc;
+  margin-bottom: 5rem; }
   @media (min-width: 1025px) {
-    .banner__info {
-      flex-direction: row; } }
-
-.banner__text {
-  padding: 4rem 8rem 8rem; }
-
-.banner__illustration {
-  padding: 0 2rem; }
-
-.banner__img {
-  width: 100%; }
-
-.banner__message {
-  background-color: #1968fc; }
-  @media (min-width: 1025px) {
-    .banner__message {
+    .message {
       display: none; } }
-  .banner__message p {
+  .message p {
     font-size: 2rem;
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    padding: 3rem 6rem;
+    padding: 5rem 0;
     font-family: "Muli Bold", sans-serif; }
 
-.banner__testimonial {
+.testimonials {
   display: flex;
   flex-direction: column; }
   @media (min-width: 1025px) {
-    .banner__testimonial {
+    .testimonials {
       flex-direction: row; } }
+  .testimonials .testimonialCard {
+    margin-bottom: 5rem; }
+    @media (min-width: 1025px) {
+      .testimonials .testimonialCard:nth-child(1) {
+        margin-bottom: 0;
+        margin-right: 2rem; } }
+    @media (min-width: 1025px) {
+      .testimonials .testimonialCard:nth-child(2) {
+        margin-bottom: 0;
+        margin-left: 2rem; } }
 
-.card {
-  margin: 5rem; }
-  .card__wrapper {
+.banner {
+  position: relative;
+  min-height: 823px; }
+  @media (min-width: 1025px) {
+    .banner {
+      min-height: 500px; } }
+  .banner__text {
+    padding: 0 3rem;
+    margin-bottom: 8rem; }
+    @media (min-width: 1025px) {
+      .banner__text {
+        width: 53%;
+        padding: 0;
+        margin-bottom: 0; } }
+  .banner__hiddenWord {
+    display: none; }
+    @media (min-width: 1025px) {
+      .banner__hiddenWord {
+        display: inline-block; } }
+  .banner__illustration {
+    position: absolute;
+    bottom: 0;
+    transform: scale(1.1); }
+    @media (min-width: 1025px) {
+      .banner__illustration {
+        width: 47%;
+        bottom: 1%;
+        right: 5%;
+        transform: scale(1.2); } }
+  .banner__img {
+    width: 100%;
+    height: 400px; }
+
+.testimonialCard {
+  width: 100%; }
+  .testimonialCard__wrapper {
     padding: 4rem;
     background-color: #ffffff;
     position: relative;
-    box-shadow: 0 0 10px rgba(25, 104, 252, 0.1); }
-  .card__quote {
+    box-shadow: 0 0 10px 2px rgba(25, 104, 252, 0.1); }
+  .testimonialCard__quote {
     position: absolute;
     top: 0;
     right: -2rem; }
-  .card__info {
-    display: flex; }
-  .card__description {
+  .testimonialCard__info {
     display: flex;
-    flex-direction: column;
-    margin-top: 2rem; }
-  .card__name {
+    margin-bottom: 4rem;
+    align-items: center; }
+  .testimonialCard__name {
     font-size: 1.8rem;
     line-height: 30px;
     font-family: "Muli Semibold", sans-serif; }
-  .card__position {
+  .testimonialCard__position {
     line-height: 30px;
     color: #1967fa;
     font-family: "Muli Semibold", sans-serif; }
-  .card__img {
-    margin: 0 2rem 4rem 0; }
-  .card__text {
+  .testimonialCard__img {
+    margin-right: 2rem; }
+  .testimonialCard__text {
     line-height: 30px;
     font-size: 1.6rem; }

@@ -1,0 +1,13 @@
+.button {
+  padding: 1rem 6.6rem;
+  border-radius: 0;
+  border: none;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: $font-tertiary;
+  &-blue {
+    background-color: $secondary;
+    color: $white;
+    box-shadow: 0 0 10px rgba(25, 104, 252, 0.2);
+  }
+}

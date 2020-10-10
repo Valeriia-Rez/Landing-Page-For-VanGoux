@@ -1,0 +1,41 @@
+.card {
+  margin: 5rem;
+
+  &__wrapper {
+    padding: 4rem;
+    background-color: $white;
+    position: relative;
+    box-shadow: 0 0 10px rgba(25, 104, 252, 0.1);
+  }
+
+  &__quote {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+  }
+  &__info {
+    display: flex;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  &__name {
+    font-size: 1.8rem;
+    line-height: 30px;
+    font-family: $font-secondary;
+  }
+  &__position {
+    line-height: 30px;
+    color: $blue;
+    font-family: $font-secondary;
+  }
+  &__img {
+    margin: 0 2rem 4rem 0;
+  }
+  &__text {
+    line-height: 30px;
+    font-size: 1.6rem;
+  }
+}

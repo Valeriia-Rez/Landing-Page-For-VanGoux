@@ -1,0 +1,44 @@
+.banner {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1025px) {
+      flex-direction: row;
+    }
+  }
+  &__text {
+    padding: 4rem 8rem 8rem;
+  }
+
+  &__illustration {
+    padding: 0 2rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__message {
+    background-color: $secondary;
+    @media (min-width: 1025px) {
+      display: none;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      padding: 3rem 6rem;
+      font-family: $font-tertiary;
+    }
+  }
+
+  &__testimonial {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1025px) {
+      flex-direction: row;
+    }
+  }
+}

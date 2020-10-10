@@ -1,0 +1,29 @@
+.featureCard {
+  box-shadow: 0 0 30px 3px rgba(49, 69, 244, 0.1);
+  //width: 100%;
+  @media (min-width: 1025px) {
+    max-width: 320px;
+    min-height: 290px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    @media (min-width: 1025px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__description {
+    background-color: $white;
+    line-height: 30px;
+    font-size: 1.6rem;
+    padding: 3rem 4rem;
+  }
+}

@@ -1,5 +1,8 @@
 .testimonialCard {
   width: 100%;
+  @media (min-width: 1025px) {
+    max-width: 540px;
+  }
   &__wrapper {
     padding: 4rem;
     background-color: $white;

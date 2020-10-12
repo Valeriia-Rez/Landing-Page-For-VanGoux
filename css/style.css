@@ -303,6 +303,23 @@ li {
     flex-wrap: wrap;
     justify-content: space-between; }
 
+.services {
+  margin-bottom: 6rem; }
+  @media (min-width: 1025px) {
+    .services {
+      margin-bottom: 12rem; } }
+  @media (min-width: 1025px) {
+    .services__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 1025px) {
+    .services .servicesCard {
+      margin-bottom: 4rem; } }
+  .services .servicesCard:not(:last-child) {
+    margin-bottom: 4rem; }
+
 .useCaseCard {
   width: calc(100% / 2 - 10px);
   background-color: #ffffff;
@@ -321,3 +338,33 @@ li {
   .useCaseCard p {
     line-height: 30px;
     font-size: 1.6rem; }
+
+.servicesCard {
+  display: flex;
+  box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1); }
+  @media (min-width: 1025px) {
+    .servicesCard {
+      width: calc(100% / 2 - 20px); } }
+  .servicesCard__img {
+    background-color: #1968fc;
+    max-width: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .servicesCard__text {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; }
+  .servicesCard__icon {
+    padding: 2rem; }
+  .servicesCard__heading {
+    padding: 2rem;
+    font-size: 1.8rem;
+    line-height: 40px;
+    color: #000000;
+    font-family: "Muli Bold", sans-serif;
+    width: 100%; }

@@ -1,5 +1,15 @@
 .scheduleCall {
   background-color: $secondary;
+  margin-bottom: 6rem;
+  @media (min-width: 1025px) {
+    margin-bottom: 12rem;
+    padding-left: 6rem;
+    display: flex;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 16rem;
+  }
 
   h2 {
     font-family: $font-tertiary;
@@ -7,11 +17,41 @@
   }
   &__wrapper {
     padding: 6rem;
+    @media (min-width: 1025px) {
+      padding: 8rem 0;
+      width: 53%;
+    }
+
+    & .heading--underline:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 2px;
+      background-color: $white;
+      box-shadow: 0 2px 0 0 $shadow-secondary;
+      border: none;
+    }
   }
 
   &__text {
     color: $white;
     font-weight: 400;
     margin-bottom: 4rem;
+  }
+
+  &__illustration {
+    display: none;
+    @media (min-width: 1025px) {
+      position: absolute;
+      display: block;
+      width: 47%;
+      transform: scale(0.9);
+      right: 0rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
   }
 }

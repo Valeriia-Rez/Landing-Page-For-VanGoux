@@ -20,7 +20,7 @@
       width: 80px;
       height: 2px;
       background-color: $secondary;
-      box-shadow: 0 2px 0 0 #d1e1fe;
+      box-shadow: 0 2px 0 0 $shadow-primary;
       border: none;
       @media (min-width: 1440px) {
         left: -4rem;

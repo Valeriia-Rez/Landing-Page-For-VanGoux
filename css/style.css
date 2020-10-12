@@ -374,13 +374,46 @@ li {
     width: 100%; }
 
 .scheduleCall {
-  background-color: #1968fc; }
+  background-color: #1968fc;
+  margin-bottom: 6rem; }
+  @media (min-width: 1025px) {
+    .scheduleCall {
+      margin-bottom: 12rem;
+      padding-left: 6rem;
+      display: flex; } }
+  @media (min-width: 1440px) {
+    .scheduleCall {
+      padding-left: 16rem; } }
   .scheduleCall h2 {
     font-family: "Muli Bold", sans-serif;
     color: #ffffff; }
   .scheduleCall__wrapper {
     padding: 6rem; }
+    @media (min-width: 1025px) {
+      .scheduleCall__wrapper {
+        padding: 8rem 0;
+        width: 53%; } }
+    .scheduleCall__wrapper .heading--underline:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 2px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 0 0 #6a9eff;
+      border: none; }
   .scheduleCall__text {
     color: #ffffff;
     font-weight: 400;
     margin-bottom: 4rem; }
+  .scheduleCall__illustration {
+    display: none; }
+    @media (min-width: 1025px) {
+      .scheduleCall__illustration {
+        position: absolute;
+        display: block;
+        width: 47%;
+        transform: scale(0.9);
+        right: 0rem; } }
+  .scheduleCall__img {
+    width: 100%; }

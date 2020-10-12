@@ -1,0 +1,17 @@
+.scheduleCall {
+  background-color: $secondary;
+
+  h2 {
+    font-family: $font-tertiary;
+    color: $white;
+  }
+  &__wrapper {
+    padding: 6rem;
+  }
+
+  &__text {
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
+}

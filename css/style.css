@@ -83,6 +83,10 @@ li {
     background-color: #1968fc;
     color: #ffffff;
     box-shadow: 0 0 30px 7px rgba(25, 104, 252, 0.2); }
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #1968fc;
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
 
 .logo {
   width: 50px;
@@ -368,3 +372,15 @@ li {
     color: #000000;
     font-family: "Muli Bold", sans-serif;
     width: 100%; }
+
+.scheduleCall {
+  background-color: #1968fc; }
+  .scheduleCall h2 {
+    font-family: "Muli Bold", sans-serif;
+    color: #ffffff; }
+  .scheduleCall__wrapper {
+    padding: 6rem; }
+  .scheduleCall__text {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 4rem; }

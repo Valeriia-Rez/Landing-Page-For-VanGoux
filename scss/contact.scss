@@ -1,20 +1,81 @@
 .contact {
-  &__form {
-    padding-left: 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
+  &__content {
     display: flex;
     flex-direction: column;
+    margin-top: 6rem;
+    @media (min-width: 1025px) {
+      width: 50%;
+    }
+    @media (min-width: 1440px) {
+      margin-top: 12rem;
+    }
+    h2 {
+      margin-left: 5rem;
 
+      @media (min-width: 1440px) {
+        margin-left: 16rem;
+      }
+    }
+  }
+
+  &__form {
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7.3rem;
+
+    @media (min-width: 1440px) {
+      padding-left: 18rem;
+    }
     input {
       border: 0;
       border-bottom: 2px solid $secondary;
       margin-bottom: 1.7rem;
+      padding-bottom: 2rem;
+      background-color: transparent;
+      @media (min-width: 1440px) {
+        margin-bottom: 3rem;
+      }
     }
+
     input[type="text"]::placeholder,
-    input[type="email"]::placeholder {
+    input[type="email"]::placeholder,
+    textarea::placeholder {
       line-height: 26px;
       font-size: 1.6rem;
       letter-spacing: 0.53px;
-      color: #141720;
+      color: $inputColor;
+      font-family: $font-helvetica;
+    }
+
+    textarea {
+      border: none;
+      border-bottom: 2px solid $secondary;
+      padding-bottom: 8.7rem;
+      margin-bottom: 4rem;
+      background-color: transparent;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__map {
+    @media (min-width: 1025px) {
+      width: 50%;
     }
   }
 }

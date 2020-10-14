@@ -106,7 +106,8 @@ li {
     padding-top: 4rem; }
     @media (min-width: 1025px) {
       .footer__nav {
-        width: 40%; } }
+        width: 40%;
+        padding-top: 0; } }
   @media (min-width: 1025px) {
     .footer__socials {
       order: 3; } }
@@ -118,6 +119,10 @@ li {
     position: absolute;
     right: 4rem;
     bottom: 0; }
+    @media (min-width: 1440px) {
+      .footer__illustration {
+        width: 90px;
+        height: 100px; } }
     .footer__illustration img {
       width: 100%;
       height: 100%; }
@@ -137,6 +142,11 @@ li {
   .btn-secondary {
     background-color: #ffffff;
     color: #1968fc;
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
+  .btn-tertiary {
+    padding: 1.5rem 12rem;
+    background-color: #1968fc;
+    color: #ffffff;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
 
 .logo {
@@ -438,12 +448,10 @@ li {
     width: 100%; }
 
 .scheduleCall {
-  background-color: #1968fc;
-  margin-bottom: 6rem; }
+  background-color: #1968fc; }
   @media (min-width: 1025px) {
     .scheduleCall {
-      margin-bottom: 12rem;
-      padding-left: 6rem;
+      padding-left: 5rem;
       display: flex; } }
   @media (min-width: 1440px) {
     .scheduleCall {
@@ -452,7 +460,7 @@ li {
     font-family: "Muli Bold", sans-serif;
     color: #ffffff; }
   .scheduleCall__wrapper {
-    padding: 6rem; }
+    padding: 5rem; }
     @media (min-width: 1025px) {
       .scheduleCall__wrapper {
         padding: 8rem 0;
@@ -482,17 +490,65 @@ li {
   .scheduleCall__img {
     width: 100%; }
 
-.contact__form {
-  padding-left: 7rem;
+.contact {
   display: flex;
+  justify-content: space-between;
   flex-direction: column; }
-  .contact__form input {
-    border: 0;
-    border-bottom: 2px solid #1968fc;
-    margin-bottom: 1.7rem; }
-  .contact__form input[type="text"]::placeholder,
-  .contact__form input[type="email"]::placeholder {
-    line-height: 26px;
-    font-size: 1.6rem;
-    letter-spacing: 0.53px;
-    color: #141720; }
+  @media (min-width: 1025px) {
+    .contact {
+      flex-direction: row; } }
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem; }
+    @media (min-width: 1025px) {
+      .contact__content {
+        width: 50%; } }
+    @media (min-width: 1440px) {
+      .contact__content {
+        margin-top: 12rem; } }
+    .contact__content h2 {
+      margin-left: 5rem; }
+      @media (min-width: 1440px) {
+        .contact__content h2 {
+          margin-left: 16rem; } }
+  .contact__form {
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7.3rem; }
+    @media (min-width: 1440px) {
+      .contact__form {
+        padding-left: 18rem; } }
+    .contact__form input {
+      border: 0;
+      border-bottom: 2px solid #1968fc;
+      margin-bottom: 1.7rem;
+      padding-bottom: 2rem;
+      background-color: transparent; }
+      @media (min-width: 1440px) {
+        .contact__form input {
+          margin-bottom: 3rem; } }
+    .contact__form input[type="text"]::placeholder,
+    .contact__form input[type="email"]::placeholder,
+    .contact__form textarea::placeholder {
+      line-height: 26px;
+      font-size: 1.6rem;
+      letter-spacing: 0.53px;
+      color: #141720;
+      font-family: "Helvetica", sans-serif; }
+    .contact__form textarea {
+      border: none;
+      border-bottom: 2px solid #1968fc;
+      padding-bottom: 8.7rem;
+      margin-bottom: 4rem;
+      background-color: transparent; }
+  .contact__btn {
+    display: flex;
+    justify-content: flex-end; }
+  .contact__img {
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 1025px) {
+    .contact__map {
+      width: 50%; } }

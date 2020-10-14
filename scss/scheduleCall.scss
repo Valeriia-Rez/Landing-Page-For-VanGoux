@@ -1,9 +1,8 @@
 .scheduleCall {
   background-color: $secondary;
-  margin-bottom: 6rem;
+
   @media (min-width: 1025px) {
-    margin-bottom: 12rem;
-    padding-left: 6rem;
+    padding-left: 5rem;
     display: flex;
   }
 
@@ -16,7 +15,7 @@
     color: $white;
   }
   &__wrapper {
-    padding: 6rem;
+    padding: 5rem;
     @media (min-width: 1025px) {
       padding: 8rem 0;
       width: 53%;

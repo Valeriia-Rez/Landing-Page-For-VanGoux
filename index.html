@@ -297,13 +297,23 @@
           />
         </div>
       </section>
-      <section class="contact container">
+      <section class="contact">
+        <div class="contact__content">
         <h2 class="heading-2 heading--underline">Contact Us</h2>
-        <form class="contact__form">
-          <input type="text" name="name" placeholder="Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <textarea name="message">Message</textarea>
-        </form>
+       
+          <form class="contact__form ">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <div class="contact__btn">
+              <button class="btn btn-tertiary" type="submit">Contact Us</button>
+            </div>
+          </form>
+        </div>
+          <div class="contact__map">
+            <img class="contact__img" src="./assets/img/map.png" alt="map">
+          </div>
+     
       </section>
     </main>
     <footer class="footer">

@@ -1,13 +1,9 @@
 .scheduleCall {
   background-color: $secondary;
-
-  @media (min-width: 1025px) {
-    padding-left: 5rem;
+  position: relative;
+  & .container {
     display: flex;
-  }
-
-  @media (min-width: 1440px) {
-    padding-left: 16rem;
+    position: relative;
   }
 
   h2 {
@@ -15,10 +11,10 @@
     color: $white;
   }
   &__wrapper {
-    padding: 5rem;
+    padding: 5rem 0;
     @media (min-width: 1025px) {
       padding: 8rem 0;
-      width: 53%;
+      width: 58%;
     }
 
     & .heading--underline:after {
@@ -44,9 +40,9 @@
     @media (min-width: 1025px) {
       position: absolute;
       display: block;
-      width: 47%;
-      transform: scale(0.9);
-      right: 0rem;
+      top: 0;
+      right: 0;
+      width: 42%;
     }
   }
 

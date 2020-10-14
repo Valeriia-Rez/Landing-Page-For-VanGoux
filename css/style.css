@@ -74,12 +74,17 @@ li {
 .footer {
   background-color: #fbfbfb;
   position: relative; }
+  .footer .container {
+    position: relative; }
   .footer__wrapper {
     padding: 4rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+    @media (min-width: 1025px) {
+      .footer__wrapper {
+        width: 80%; } }
     .footer__wrapper .logo {
       width: 50%; }
       @media (min-width: 1025px) {
@@ -112,20 +117,21 @@ li {
     .footer__socials {
       order: 3; } }
   .footer__icon {
-    margin-right: 2rem; }
+    margin-right: 3.5rem; }
   .footer__illustration {
     width: 55px;
     height: 60px;
     position: absolute;
-    right: 4rem;
+    right: 0;
     bottom: 0; }
-    @media (min-width: 1440px) {
+    @media (min-width: 1025px) {
       .footer__illustration {
         width: 90px;
         height: 100px; } }
     .footer__illustration img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transform: scaleX(1.4); }
 
 .btn {
   padding: 1.5rem 3.5rem;
@@ -144,7 +150,7 @@ li {
     color: #1968fc;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
   .btn-tertiary {
-    padding: 1.5rem 12rem;
+    min-width: 250px;
     background-color: #1968fc;
     color: #ffffff;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
@@ -448,23 +454,20 @@ li {
     width: 100%; }
 
 .scheduleCall {
-  background-color: #1968fc; }
-  @media (min-width: 1025px) {
-    .scheduleCall {
-      padding-left: 5rem;
-      display: flex; } }
-  @media (min-width: 1440px) {
-    .scheduleCall {
-      padding-left: 16rem; } }
+  background-color: #1968fc;
+  position: relative; }
+  .scheduleCall .container {
+    display: flex;
+    position: relative; }
   .scheduleCall h2 {
     font-family: "Muli Bold", sans-serif;
     color: #ffffff; }
   .scheduleCall__wrapper {
-    padding: 5rem; }
+    padding: 5rem 0; }
     @media (min-width: 1025px) {
       .scheduleCall__wrapper {
         padding: 8rem 0;
-        width: 53%; } }
+        width: 58%; } }
     .scheduleCall__wrapper .heading--underline:after {
       content: "";
       display: block;
@@ -484,48 +487,41 @@ li {
       .scheduleCall__illustration {
         position: absolute;
         display: block;
-        width: 47%;
-        transform: scale(0.9);
-        right: 0rem; } }
+        top: 0;
+        right: 0;
+        width: 42%; } }
   .scheduleCall__img {
     width: 100%; }
 
 .contact {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
-  @media (min-width: 1025px) {
-    .contact {
-      flex-direction: row; } }
+  position: relative; }
+  .contact .container {
+    display: flex;
+    flex-direction: column; }
   .contact__content {
     display: flex;
     flex-direction: column;
     margin-top: 6rem; }
-    @media (min-width: 1025px) {
-      .contact__content {
-        width: 50%; } }
     @media (min-width: 1440px) {
       .contact__content {
-        margin-top: 12rem; } }
-    .contact__content h2 {
-      margin-left: 5rem; }
-      @media (min-width: 1440px) {
-        .contact__content h2 {
-          margin-left: 16rem; } }
+        margin-top: 12rem;
+        width: 58%; } }
   .contact__form {
-    padding: 0 7rem;
+    padding: 0 2rem 0 7rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 7.3rem; }
     @media (min-width: 1440px) {
       .contact__form {
-        padding-left: 18rem; } }
+        padding-left: 5rem;
+        max-width: 450px; } }
     .contact__form input {
       border: 0;
       border-bottom: 2px solid #1968fc;
       margin-bottom: 1.7rem;
       padding-bottom: 2rem;
-      background-color: transparent; }
+      background-color: transparent;
+      outline: none; }
       @media (min-width: 1440px) {
         .contact__form input {
           margin-bottom: 3rem; } }
@@ -542,13 +538,19 @@ li {
       border-bottom: 2px solid #1968fc;
       padding-bottom: 8.7rem;
       margin-bottom: 4rem;
-      background-color: transparent; }
+      background-color: transparent;
+      outline: none; }
   .contact__btn {
     display: flex;
     justify-content: flex-end; }
   .contact__img {
     width: 100%;
     height: 100%; }
-  @media (min-width: 1025px) {
-    .contact__map {
-      width: 50%; } }
+  .contact__map {
+    background-color: #fbfbfb; }
+    @media (min-width: 1025px) {
+      .contact__map {
+        width: 42%;
+        position: absolute;
+        right: 0;
+        top: 0; } }

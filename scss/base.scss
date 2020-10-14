@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  background-image: url("../assets/img/background-decor-mobile@3x.png");
+  background-image: url("../assets/img/background-decor-mobile.png");
   background-size: cover;
   font-family: $font-primary;
   color: $primary;
   font-size: 1.4rem;
   @media (min-width: 1025px) {
-    background-image: url("../assets/img/background-decor@3x.png");
+    background-image: url("../assets/img/background-decor.png");
   }
 }
 

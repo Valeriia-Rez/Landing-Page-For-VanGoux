@@ -71,6 +71,57 @@ li {
     color: #000000;
     font-family: "Muli Semibold", sans-serif; }
 
+.footer {
+  background-color: #fbfbfb;
+  position: relative; }
+  .footer__wrapper {
+    padding: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__wrapper .logo {
+      width: 50%; }
+      @media (min-width: 1025px) {
+        .footer__wrapper .logo {
+          width: auto; } }
+  .footer__logo {
+    margin-right: 0;
+    width: 50px;
+    height: 50px; }
+  .footer__logoText {
+    color: #1968fc;
+    font-family: "Muli Bold", sans-serif;
+    background-color: #f3f7ff; }
+    .footer__logoText p {
+      padding: 1.6rem; }
+  .footer__link {
+    line-height: 20px;
+    color: #000000;
+    font-family: "Muli Semibold", sans-serif; }
+  .footer__nav {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    padding-top: 4rem; }
+    @media (min-width: 1025px) {
+      .footer__nav {
+        width: 40%; } }
+  @media (min-width: 1025px) {
+    .footer__socials {
+      order: 3; } }
+  .footer__icon {
+    margin-right: 2rem; }
+  .footer__illustration {
+    width: 55px;
+    height: 60px;
+    position: absolute;
+    right: 4rem;
+    bottom: 0; }
+    .footer__illustration img {
+      width: 100%;
+      height: 100%; }
+
 .btn {
   padding: 1.5rem 3.5rem;
   border-radius: 0;
@@ -89,12 +140,11 @@ li {
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
 
 .logo {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-items: center; }
   .logo__img {
-    width: 100%;
+    width: 50px;
+    height: 50px;
     margin-right: 1rem; }
   .logo a {
     color: #1968fc;
@@ -253,19 +303,33 @@ li {
   box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1); }
   @media (min-width: 1025px) {
     .featureCard {
+      width: calc(100% / 3 - 20px); } }
+  @media (min-width: 1440px) {
+    .featureCard {
       width: calc(100% / 3 - 50px); } }
   .featureCard__picture {
-    width: 50%; }
+    max-width: 80px;
+    line-height: 30px;
+    background-color: #1968fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; }
+    @media (min-width: 1025px) {
+      .featureCard__picture {
+        min-width: 100px;
+        padding: 0; } }
+    @media (min-width: 1440px) {
+      .featureCard__picture {
+        min-width: 120px; } }
+  .featureCard__heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; }
   .featureCard__name {
     display: flex;
-    align-items: center; }
-  .featureCard__icon {
-    width: 80px;
-    height: 80px; }
-    @media (min-width: 1025px) {
-      .featureCard__icon {
-        max-width: 120px;
-        max-height: 120px; } }
+    align-items: stretch; }
   .featureCard__description {
     background-color: #ffffff;
     line-height: 30px;
@@ -417,3 +481,18 @@ li {
         right: 0rem; } }
   .scheduleCall__img {
     width: 100%; }
+
+.contact__form {
+  padding-left: 7rem;
+  display: flex;
+  flex-direction: column; }
+  .contact__form input {
+    border: 0;
+    border-bottom: 2px solid #1968fc;
+    margin-bottom: 1.7rem; }
+  .contact__form input[type="text"]::placeholder,
+  .contact__form input[type="email"]::placeholder {
+    line-height: 26px;
+    font-size: 1.6rem;
+    letter-spacing: 0.53px;
+    color: #141720; }

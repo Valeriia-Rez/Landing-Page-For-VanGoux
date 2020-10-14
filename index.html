@@ -117,11 +117,14 @@
             <div class="featureCard__name">
               <div class="featureCard__picture">
                 <img
-                  src="./assets/icon/icon-solid-pixel-perfect.svg"
+                  src="./assets/icon/shape (4).svg"
+                  alt="feature-icon"
                   class="featureCard__icon"
                 />
               </div>
-              <h4 class="heading-4">Pixel perfect output</h4>
+              <div class="featureCard__heading">
+                <h4 class="heading-4">Pixel perfect output</h4>
+              </div>
             </div>
             <p class="featureCard__description">
               Crisp, pixel-perfect landing pages without bothering your
@@ -131,11 +134,16 @@
           <span class="verticalDivider"></span>
           <div class="featureCard">
             <div class="featureCard__name">
-              <img
-                src="./assets/icon/icon-solid-flexible-responsive.svg"
-                class="featureCard__icon"
-              />
-              <h4 class="heading-4">Flexible & responsive</h4>
+              <div class="featureCard__picture">
+                <img
+                  src="./assets/icon/responsive-website.svg"
+                  alt="feature-icon"
+                  class="featureCard__icon"
+                />
+              </div>
+              <div class="featureCard__heading">
+                <h4 class="heading-4">Flexible & responsive</h4>
+              </div>
             </div>
             <p class="featureCard__description">
               Your web pages will flexibly adapt to different browser window
@@ -145,11 +153,16 @@
           <span class="verticalDivider"></span>
           <div class="featureCard">
             <div class="featureCard__name">
-              <img
-                src="./assets/icon/icon-solid-pixel-perfect.svg"
-                class="featureCard__icon"
-              />
-              <h4 class="heading-4">Complete code freedom</h4>
+              <div class="featureCard__picture">
+                <img
+                  src="./assets/icon/responsive-website.svg"
+                  alt="feature-icon"
+                  class="featureCard__icon"
+                />
+              </div>
+              <div class="featureCard__heading">
+                <h4 class="heading-4">Complete code freedom</h4>
+              </div>
             </div>
             <p class="featureCard__description">
               VanGoux gives you source code of your website, so you can add your
@@ -284,6 +297,45 @@
           />
         </div>
       </section>
+      <section class="contact container">
+        <h2 class="heading-2 heading--underline">Contact Us</h2>
+        <form class="contact__form">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message">Message</textarea>
+        </form>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="logo">
+          <img
+            class="footer__logo"
+            src="./assets/icon/logo-small-solid@3x.png"
+            alt="logo"
+          />
+          <div class="footer__logoText">
+            <p>Site made with VanGoux</p>
+          </div>
+        </div>
+
+        <div class="footer__socials">
+          <img class="footer__icon" src="./assets/icon/path.svg" alt="facebook" />
+          <img src="./assets/icon/shape (3).svg" alt="instagramm" />
+        </div>
+        <nav class="footer__nav">
+          <a class="footer__link" href="#">Contact</a>
+          <a class="footer__link" href="#">Feedback</a>
+          <a class="footer__link" href="#">Join our Slack</a>
+          <a class="footer__link" href="#">Terms</a>
+        </nav>
+      </div>
+      <div class="footer__illustration">
+        <img
+          src="./assets/icon/vincent-illustration@3x.png"
+          alt="vincent-illustration"
+        />
+      </div>
+    </footer>
   </body>
 </html>

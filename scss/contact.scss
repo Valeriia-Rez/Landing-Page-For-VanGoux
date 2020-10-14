@@ -1,0 +1,20 @@
+.contact {
+  &__form {
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      border: 0;
+      border-bottom: 2px solid $secondary;
+      margin-bottom: 1.7rem;
+    }
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+      line-height: 26px;
+      font-size: 1.6rem;
+      letter-spacing: 0.53px;
+      color: #141720;
+    }
+  }
+}

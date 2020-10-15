@@ -144,13 +144,14 @@ li {
   .btn-primary {
     background-color: #1968fc;
     color: #ffffff;
-    box-shadow: 0 0 30px 7px rgba(25, 104, 252, 0.2); }
+    box-shadow: 0 10px 40px rgba(25, 104, 252, 0.2); }
   .btn-secondary {
     background-color: #ffffff;
     color: #1968fc;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
   .btn-tertiary {
     min-width: 250px;
+    font-family: "Helvetica", sans-serif;
     background-color: #1968fc;
     color: #ffffff;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4); }
@@ -161,15 +162,12 @@ li {
   .logo__img {
     width: 50px;
     height: 50px;
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .logo a {
     color: #1968fc;
     line-height: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Muli Semibold", sans-serif; }
-    @media (min-width: 1025px) {
-      .logo a {
-        font-size: 2rem; } }
 
 .container {
   margin-left: 5rem;
@@ -212,6 +210,9 @@ li {
 .heading-3, .heading-4 {
   font-size: 2rem;
   line-height: 4rem; }
+
+.heading-3 {
+  font-weight: 400; }
 
 .heading-4 {
   font-family: "Muli Semibold", sans-serif;
@@ -286,7 +287,7 @@ li {
   padding: 4rem;
   background-color: #ffffff;
   position: relative;
-  box-shadow: 0 0 10px 2px rgba(25, 104, 252, 0.1); }
+  box-shadow: 0 20px 60px rgba(25, 104, 252, 0.1); }
 
 .testimonialCard__quote {
   position: absolute;
@@ -370,6 +371,9 @@ li {
 .features {
   margin-bottom: 12rem; }
   @media (min-width: 1025px) {
+    .features {
+      margin-bottom: 20rem; } }
+  @media (min-width: 1025px) {
     .features__wrapper {
       display: flex;
       justify-content: space-between; } }
@@ -450,7 +454,7 @@ li {
     font-size: 1.8rem;
     line-height: 40px;
     color: #000000;
-    font-family: "Muli Bold", sans-serif;
+    font-family: "Muli Semibold", sans-serif;
     width: 100%; }
 
 .scheduleCall {
@@ -505,12 +509,15 @@ li {
     @media (min-width: 1440px) {
       .contact__content {
         margin-top: 12rem;
-        width: 58%; } }
+        width: 50%; } }
   .contact__form {
     padding: 0 2rem 0 7rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 7.3rem; }
+    @media (min-width: 1025px) {
+      .contact__form {
+        max-width: 350px; } }
     @media (min-width: 1440px) {
       .contact__form {
         padding-left: 5rem;
@@ -550,7 +557,8 @@ li {
     background-color: #fbfbfb; }
     @media (min-width: 1025px) {
       .contact__map {
-        width: 42%;
+        width: 50%;
         position: absolute;
         right: 0;
-        top: 0; } }
+        top: 0;
+        height: 100%; } }

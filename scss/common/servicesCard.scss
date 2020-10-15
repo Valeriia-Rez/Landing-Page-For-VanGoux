@@ -4,6 +4,7 @@
   @media (min-width: 1025px) {
     width: calc(100% / 2 - 20px);
   }
+
   &__img {
     background-color: $secondary;
     max-width: 80px;
@@ -28,11 +29,10 @@
 
   &__heading {
     padding: 2rem;
-
     font-size: 1.8rem;
     line-height: 40px;
     color: $black;
-    font-family: $font-tertiary;
+    font-family: $font-secondary;
     width: 100%;
   }
 }

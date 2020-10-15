@@ -3,7 +3,6 @@
   margin-right: 5rem;
   @media (min-width: 1440px) {
     max-width: 1120px;
-
     margin-right: auto;
     margin-left: auto;
   }
@@ -35,16 +34,22 @@
     letter-spacing: 1px;
     margin-bottom: 2rem;
   }
+
   &-2 {
     font-size: 3rem;
     line-height: 60px;
     text-transform: uppercase;
     font-weight: 400;
   }
+
   &-3,
   &-4 {
     font-size: 2rem;
     line-height: 4rem;
+  }
+
+  &-3 {
+    font-weight: 400;
   }
 
   &-4 {

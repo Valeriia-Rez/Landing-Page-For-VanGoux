@@ -10,7 +10,7 @@
   &-primary {
     background-color: $secondary;
     color: $white;
-    box-shadow: 0 0 30px 7px rgba(25, 104, 252, 0.2);
+    box-shadow: 0 10px 40px rgba(25, 104, 252, 0.2);
   }
 
   &-secondary {
@@ -21,6 +21,7 @@
 
   &-tertiary {
     min-width: 250px;
+    font-family: $font-helvetica;
     background-color: $secondary;
     color: $white;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);

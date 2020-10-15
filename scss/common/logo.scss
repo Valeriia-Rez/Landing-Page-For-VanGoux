@@ -1,19 +1,17 @@
 .logo {
   display: flex;
   align-items: center;
+
   &__img {
     width: 50px;
     height: 50px;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   a {
     color: $secondary;
     line-height: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: $font-secondary;
-    @media (min-width: 1025px) {
-      font-size: 2rem;
-    }
   }
 }

@@ -6,15 +6,18 @@
   @media (min-width: 1025px) {
     width: calc(100% / 3 - 13px);
   }
+
   &__wrapper {
     padding: 2rem;
   }
+
   h3 {
     font-family: $font-tertiary;
     color: $blue;
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
+
   p {
     line-height: 30px;
     font-size: 1.6rem;
